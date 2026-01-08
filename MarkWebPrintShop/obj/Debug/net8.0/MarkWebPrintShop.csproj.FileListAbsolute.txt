@@ -28,3 +28,4 @@
 /home/mark/Documents/MarkPrintShop/MarkWebPrintShop/obj/Debug/net8.0/MarkWebPrintShop.pdb
 /home/mark/Documents/MarkPrintShop/MarkWebPrintShop/obj/Debug/net8.0/MarkWebPrintShop.genruntimeconfig.cache
 /home/mark/Documents/MarkPrintShop/MarkWebPrintShop/obj/Debug/net8.0/ref/MarkWebPrintShop.dll
+/home/mark/Documents/MarkPrintShop/MarkWebPrintShop/obj/Debug/net8.0/MarkWebPrintShop.sourcelink.json
