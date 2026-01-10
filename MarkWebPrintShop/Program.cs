@@ -1,13 +1,12 @@
-using MarkWebPrintShop.Data;
-using Microsoft.EntityFrameworkCore;
-
+using MarkWebPrintShop.Data; using Microsoft.EntityFrameworkCore; using EFCore.NamingConventions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefualtConnection")));
-
+builder.Services.AddDbContext<ApplicationDBContext>(
+    options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefualtConnection")).UseSnakeCaseNamingConvention()
+    );
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
