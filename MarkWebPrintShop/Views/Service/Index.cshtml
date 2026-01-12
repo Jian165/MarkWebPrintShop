@@ -1,0 +1,43 @@
+@model List<Service>
+
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-6 ">
+            <h2>Service List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-primary">
+                Add Service
+            </a>
+        </div>
+    </div>
+</div>
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th>Service Name</th>
+            <th class="text-center">Availability</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (Service obj in Model)
+        {
+            <tr>
+                <td>@obj.ServiceName</td>
+                @if (@obj.IsAvailable)
+                {
+                    <td class="d-flex justify-content-center">
+                        <span class="badge rounded-pill bg-success">Avialable</span>
+                    </td>
+                }
+                else
+                {
+                    <td class="d-flex justify-content-center">
+                        <span class="badge rounded-pill bg-warning">Not Available</span>
+                    </td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
