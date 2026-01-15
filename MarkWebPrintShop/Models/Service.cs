@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace MarkWebPrintShop.Models;
@@ -7,10 +8,13 @@ public class Service
     public int ServiceId { get; set; }
 
     [Required]
-    public string ServiceName { get; set; } = string.Empty;
+    [StringLength(50,MinimumLength = 5, ErrorMessage = "Must be between 5 and 50 characters.")]
+    [DisplayName("Service Name")]
+    public string ServiceName { get; set; }
 
+    [StringLength(200,MinimumLength = 50, ErrorMessage = "Must be between 8 and 100 characters.")]
     [DataType(DataType.MultilineText)]
-    public string Description { get; set; } = string.Empty;
+    public string Description { get; set; }
 
     public bool IsAvailable { get; set; }
 }
