@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/mark/Documents/MarkPrintShop/MarkWebPrintShop/wwwroot/js/components/modalDescription.js",
+      "PackagePath": "staticwebassets/js/components/modalDescription.js"
+    },
+    {
       "Id": "/home/mark/Documents/MarkPrintShop/MarkWebPrintShop/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

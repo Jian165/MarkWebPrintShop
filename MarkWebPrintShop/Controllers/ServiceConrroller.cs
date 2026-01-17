@@ -32,6 +32,7 @@ namespace MarkWebPrintShop.Conrollers
             {
                 _db.Services.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "New Service Has Beend Added!";
                 return RedirectToAction("Index");
             }
             else
@@ -62,6 +63,8 @@ namespace MarkWebPrintShop.Conrollers
             {
                 _db.Services.Update(obj);
                 _db.SaveChanges();
+
+                TempData["success"] = $"{obj.ServiceName }Successfuly Updated!";
                 return RedirectToAction("Index");
             }
             return View();
@@ -93,6 +96,7 @@ namespace MarkWebPrintShop.Conrollers
             }
             _db.Services.Remove(obj);
             _db.SaveChanges();
+            TempData["success"] = "Service Successfuly Removed!";
             return RedirectToAction("Index");
         }
         

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3AzvJVQOImnvghJy6D1mhNinY6lFjxnJdNX2sz1j2to=",
+  "Hash": "XlsMy88m9P2O6g4WWwt6YDDjJQu4E//8DvkGrNhxwSI=",
   "Source": "MarkWebPrintShop",
   "BasePath": "_content/MarkWebPrintShop",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/mark/Documents/MarkPrintShop/MarkWebPrintShop/wwwroot/js/components/modalDescription.js",
+      "SourceId": "MarkWebPrintShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mark/Documents/MarkPrintShop/MarkWebPrintShop/wwwroot/",
+      "BasePath": "_content/MarkWebPrintShop",
+      "RelativePath": "js/components/modalDescription.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/components/modalDescription.js"
     },
     {
       "Identity": "/home/mark/Documents/MarkPrintShop/MarkWebPrintShop/wwwroot/js/site.js",

@@ -12,7 +12,7 @@ public class Service
     [DisplayName("Service Name")]
     public string ServiceName { get; set; }
 
-    [StringLength(200,MinimumLength = 50, ErrorMessage = "Must be between 8 and 100 characters.")]
+    [StringLength(350,MinimumLength = 5, ErrorMessage = "Must be between 5 and 200 characters.")]
     [DataType(DataType.MultilineText)]
     public string Description { get; set; }
 

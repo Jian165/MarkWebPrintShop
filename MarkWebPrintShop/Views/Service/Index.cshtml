@@ -1,4 +1,5 @@
 @using Microsoft.EntityFrameworkCore.Metadata.Internal
+@using System.Reflection.PortableExecutable
 @model List<Service>
 @{
     int tableNumber = 1;
@@ -11,7 +12,7 @@
                     <h2 class="text-light fw-bold">Service List</h2>
                 </div>
                 <div class="col-6 text-end">
-                    <a asp-asp-controller="Service" asp-action="Create" class="btn btn-primary ">
+                    <a asp-controller="Service" asp-action="Create" class="btn btn-primary ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                             <path
@@ -42,10 +43,9 @@
             <tbody>
                 @foreach (Service obj in Model)
                 {
-                    <tr data-bs-toggle="modal" data-bs-target="#descriptionModal">
+                    <tr >
                         <td>@tableNumber</td>
-                        <td>
-                            @obj.ServiceName</td>
+                        <td data-bs-toggle="modal" data-bs-target="#descriptionModal" data-description="@obj.Description" data-service-name="@obj.ServiceName">@obj.ServiceName</td>
                         @if (@obj.IsAvailable)
                         {
                             <td class="text-center">
@@ -95,3 +95,19 @@
 
     </div>
 </div>
+<div class="modal fade" id="descriptionModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalTitle"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4" id="modalBody">
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/components/modalDescription.js"></script>
+}

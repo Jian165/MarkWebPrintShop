@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MarkWebPrintShop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c01f9871aeb102424f8ebc20b2c617672d7c05d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14da536255c2cf8e3f6fbd877e4cb5785af0d22f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MarkWebPrintShop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MarkWebPrintShop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
